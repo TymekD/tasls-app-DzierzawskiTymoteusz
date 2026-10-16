@@ -1,0 +1,12 @@
+name: "test and scan"
+
+on: 
+  push:
+      branches:
+        - main
+
+jobs:
+  run_tests:  
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
